@@ -1,0 +1,119 @@
+.how-it-works {
+    padding: 10rem 0;
+
+    @media (max-width: 991px) {
+        padding: 5.1rem 0 6.6rem;
+    }
+
+    @media (max-width: 500px) {
+        padding: 2.2rem 0 3rem;
+    }
+
+    // .how-it-works__inner
+
+    &__inner {
+        @extend %flex-row;
+
+        @media (max-width: 1200px) {
+            align-items: flex-end;
+        }
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__title {
+        color: #000;
+    }
+
+    &__tabs-content {
+        padding-left: 10.5rem;
+    }
+
+    &__tabs-title {
+        color: #141414;
+
+        &:before {
+            @include round(1.5rem, $green-gradient);
+        }
+
+        &:after {
+            background-image: url(../img/decor/green-line.svg);
+
+            @media (max-width: 991px) {
+                width: 4.5rem;
+                height: 5.1rem;
+                background-image: url(../img/decor/green-line-tablet.svg);
+            }
+
+            @media (max-width: 500px) {
+                background-image: url(../img/decor/green-line-mobile.svg);
+            }
+        }
+    }
+
+    // .how-it-works__list
+
+    &__list {
+        width: 49.5rem;
+        counter-reset: list-counter;
+        margin-bottom: 3.5rem;
+
+        @media (max-width: 500px) {
+            width: calc(100vw - 2 * 2rem - 3rem);
+        }
+    }
+
+    // .how-it-works__list-item
+
+    &__list-item {
+        position: relative;
+        padding-left: 3rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #5b5b5b;
+
+        @media (max-width: 500px) {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            padding-left: 3rem;
+        }
+
+        &:before {
+            content: counter(list-counter);
+            counter-increment: list-counter;
+            position: absolute;
+            top: 0.2rem;
+            left: 0;
+            @extend %flex-center;
+            text-align: center;
+            width: 2.1rem;
+            height: 2.1rem;
+            border-radius: 50%;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            @include text-gradient($green-gradient, $green);
+            color: #fff;
+            border: 0.1rem solid $green;
+
+            @media (max-width: 500px) {
+                width: 1.6rem;
+                height: 1.6rem;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+            }
+        }
+    }
+
+    &__list-item+&__list-item {
+        margin-top: 1rem;
+    }
+
+    &__img {
+        @media (max-width: 991px) {
+            margin: 0 auto;
+        }
+    }
+}

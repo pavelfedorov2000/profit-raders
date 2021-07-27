@@ -1,0 +1,13 @@
+@mixin text-gradient($gradient, $color) {
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $color;
+}
+
+@mixin round($size, $bg) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background: $bg;
+}

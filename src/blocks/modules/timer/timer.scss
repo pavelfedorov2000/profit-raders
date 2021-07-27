@@ -1,0 +1,106 @@
+.timer {
+    @extend %flex-row;
+
+    &__item {
+        @extend %flex-col-center;
+
+        &:last-child {
+            .timer {
+                &__gap {
+
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__item-descr {
+        @extend %text-24;
+
+        @media (max-width: 767px) {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+
+    // .timer__gaps
+
+    &__gaps {
+        display: flex;
+        margin-bottom: 0.3rem;
+    }
+
+    // .timer__gap
+
+    &__gap {
+        position: relative;
+        width: 6.3rem;
+        height: 9.6rem;
+        @extend %flex-center;
+        border: 0.1rem solid #ff3d22;
+        border-radius: 0.5rem;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 5.5rem;
+        line-height: 7.5rem;
+        letter-spacing: 0.01em;
+
+        @media(max-width: 500px) {
+            width: 3rem;
+            height: 5rem;
+            font-size: 3rem;
+        }
+
+        @media(max-width: 374px) {
+            width: 2.5rem;
+            height: 4.5rem;
+            font-size: 2.5rem;
+        }
+
+        &:not(:first-child) {
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                width: 0.6rem;
+                height: 0.6rem;
+                border-radius: 50%;
+                background-color: #fff;
+                right: -2.3rem;
+
+                @media(max-width: 500px) {
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    right: -1.2rem;
+                }
+            }
+
+            &:before {
+                top: calc(50% - 1.4rem);
+
+                @media(max-width: 500px) {
+                    top: calc(50% - 1rem);
+                }
+            }
+
+            &:after {
+                bottom: calc(50% - 1.4rem);
+
+                @media(max-width: 500px) {
+                    bottom: calc(50% - 1rem);
+                }
+            }
+        }
+    }
+
+    &__gap+&__gap {
+        margin-left: 1rem;
+
+        @media(max-width: 500px) {
+            margin-left: 0.7rem;
+        }
+    }
+}

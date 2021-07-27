@@ -1,0 +1,21 @@
+<svg width="494" height="89" viewBox="0 0 494 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 86.8159C5.26492 87.1788 13.0414 87.2514 18.0278 84.6387C24.2608 81.3729 25.1512 77.5627 33.1651 77.5627C41.179 77.5627 52.7546 79.1956 62.5494 73.7526C72.3441 68.3095 71.4537 61.7779 80.358 60.145C89.2623 58.512 97.2762 61.7779 102.619 62.3222C107.961 62.8665 119.537 57.9677 127.551 49.2588C135.565 40.5499 155.154 20.955 165.839 22.0436C176.525 23.1322 180.086 23.1322 194.333 35.6512C208.58 48.1702 214.813 53.069 220.156 53.069C225.498 53.069 243.307 30.7525 251.321 30.7525C259.335 30.7525 272.691 47.6259 291.39 44.9044C310.089 42.1829 307.418 38.3727 314.542 40.55C321.665 42.7272 334.309 42.8963 341.254 45.993C347.658 48.8478 351.94 66.6766 355.501 67.2209C359.063 67.7652 364.155 59.6812 370.639 58.512C373.247 58.0418 384.321 61.7019 389.338 63.4108C396.364 65.8043 421.393 61.7779 426.736 60.145C432.078 58.512 447.008 44.9044 450.569 40.55" stroke="url(#paint0_linear)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#filter0_f)">
+<ellipse cx="447.212" cy="42.5" rx="16.7878" ry="12.5" fill="url(#paint1_linear)"/>
+</g>
+<defs>
+<filter id="filter0_f" x="400.424" y="0" width="93.5756" height="85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="15" result="effect1_foregroundBlur"/>
+</filter>
+<linearGradient id="paint0_linear" x1="226.285" y1="22" x2="226.285" y2="87" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2BA040"/>
+<stop offset="1" stop-color="#2BA040" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="460.621" y1="31.4522" x2="434.648" y2="74.0018" gradientUnits="userSpaceOnUse">
+<stop stop-color="#239D42"/>
+<stop offset="1" stop-color="#E1E224"/>
+</linearGradient>
+</defs>
+</svg>

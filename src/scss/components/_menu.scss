@@ -1,0 +1,24 @@
+.menu {
+    // .menu__list
+
+    &__list {
+        display: flex;
+    }
+
+    // .menu__link
+
+    &__link {
+        @extend %text-16;
+        color: #fff;
+        transition: 0.3s color;
+
+        @media(max-width: 500px) {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+
+        &:hover {
+            color: #ff501f;
+        }
+    }
+}

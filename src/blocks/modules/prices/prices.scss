@@ -1,0 +1,175 @@
+.prices {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/bg/prices.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 11.7rem 0 14.8rem;
+
+    &:before {
+        content: url(../img/decor/prices-decor.svg);
+        position: absolute;
+        @extend %pos-center-xy;
+        z-index: -1;
+    }
+
+    @media (max-width: 991px) {
+        padding: 4.1rem 0 9.3rem;
+    }
+
+    @media (max-width: 500px) {
+        padding: 2.2rem 0 3.9rem;
+    }
+
+    // .prices__cards
+
+    &__cards {
+        @extend %flex-row;
+        margin: 7.2rem 0 5.1rem;
+
+        @media (max-width: 991px) {
+            margin: 5rem 0 3.4rem;
+        }
+
+        @media (max-width: 500px) {
+            margin: 3rem -1rem 2.5rem;
+            padding-bottom: 3.5rem;
+        }
+    }
+
+    // .prices__card
+
+    &__card {
+        width: 42rem;
+        min-height: 53rem;
+        flex-shrink: 0;
+        background: $dark-bg;
+        padding: 3.3rem 2.6rem 3.5rem;
+        @extend %flex-col-center;
+        border-radius: 2.2rem;
+        transition: 0.3s border-color;
+
+        @media(max-width: 991px) {
+            display: flex !important;
+            margin-right: 5rem;
+        }
+
+        &:hover {
+            border-color: $dark-bg;
+        }
+
+        @media (max-width: 500px) {
+            width: 100%;
+            justify-content: space-between;
+            min-height: 42rem;
+            margin: 0 1rem;
+        }
+
+        /* @media(max-width: 374px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        } */
+    }
+
+    // .prices__small-list
+
+    &__small-list {
+        @extend %text-18;
+        color: #000;
+
+        @media (max-width: 991px) {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+        }
+    }
+}
+
+.price-card {
+    // .price-card__prices
+
+    &__prices {
+        text-align: center;
+        margin-bottom: 3.7rem;
+
+        @media (max-width: 500px) {
+            margin-bottom: 2.8rem;
+        }
+    }
+
+    // .price-card__old-price
+
+    &__old-price {
+        font-size: 2.2rem;
+        line-height: 4.8rem;
+        font-weight: 700;
+        color: #c7c7c7;
+        text-decoration: line-through;
+
+        @media (max-width: 500px) {
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+        }
+    }
+
+    // .price-card__new-price
+
+    &__new-price {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        @include text-gradient($orange-gradient, $orange);
+
+        @media (max-width: 500px) {
+            font-size: 3.6rem;
+        }
+    }
+
+    // .price-card__list
+
+    &__list {
+        margin-bottom: 4.5rem;
+        flex-grow: 1;
+
+        @media(max-width: 500px) {
+            flex-grow: 0;
+        }
+    }
+
+    // .price-card__list-item
+
+    &__list-item {
+        position: relative;
+        padding-left: 2.4rem;
+        @extend %text-18;
+        font-weight: 500;
+        color: #fff;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            left: 0;
+            @include round(1rem, $green-gradient);
+        }
+
+        @media (max-width: 500px) {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+    }
+
+    &__list-item+&__list-item {
+        margin-top: 1.5rem;
+    }
+
+    // .price-card__btn
+
+    &__btn {
+        box-shadow: none;
+        text-align: center;
+
+        &:hover {
+            box-shadow: 0px 4px 4px rgba(254, 177, 26, 0.22);
+        }
+    }
+}

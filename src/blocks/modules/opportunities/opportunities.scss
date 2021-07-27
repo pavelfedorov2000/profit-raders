@@ -1,0 +1,135 @@
+.opportunities {
+    background-color: $dark-bg;
+    padding: 11rem 0 13rem;
+    color: #fff;
+
+    @media (max-width: 991px) {
+        padding: 3.5rem 0 4.7rem;
+    }
+
+    @media (max-width: 500px) {
+        padding: 2.2rem 0 3.2rem;
+    }
+
+    // .opportunities__inner
+
+    &__inner {
+        @extend %flex-row;
+
+        @media (max-width: 1200px) {
+            align-items: flex-end;
+        }
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__btn {
+        @media (max-width: 991px) {
+            margin: 3rem auto 0;
+        }
+
+        @media (max-width: 500px) {
+            margin-top: 2.5rem;
+        }
+    }
+
+    // .opportunities__content
+
+    &__content {
+        @media (max-width: 991px) {
+
+            margin-bottom: 2.6rem;
+        }
+
+        @media (max-width: 500px) {
+            margin-bottom: 3.6rem;
+        }
+    }
+
+    &__tabs-title {
+        color: #fff;
+
+        &:before {
+            @include round(1.5rem, $orange-gradient);
+        }
+
+        &:after {
+            background-image: url(../img/decor/orange-line.svg);
+
+            @media (max-width: 991px) {
+                width: 5.3rem;
+                height: 5.3rem;
+                background-image: url(../img/decor/orange-line-tablet.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            @media (max-width: 500px) {
+                width: 2.3rem;
+                height: 6rem;
+                background-image: url(../img/decor/orange-line-mobile.svg);
+            }
+        }
+    }
+
+    // .opportunities__list
+
+    &__list {
+        width: 52.5rem;
+        margin-bottom: 3.2rem;
+
+        @media (max-width: 500px) {
+            width: calc(100vw - 2 * 2rem - 3rem);
+        }
+    }
+
+    // .opportunities__list-item
+
+    &__list-item {
+        position: relative;
+        padding-left: 3.2rem;
+        @extend %text-18;
+
+        @media (max-width: 500px) {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            padding-left: 1.5rem;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0.6rem;
+            left: 0;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: $orange-gradient;
+
+            @media (max-width: 500px) {
+                width: 0.5rem;
+                height: 0.5rem;
+            }
+        }
+    }
+
+    &__list-item+&__list-item {
+        margin-top: 1.5rem;
+
+        @media (max-width: 500px) {
+            margin-top: 1rem;
+        }
+    }
+
+    // .opportunities__img
+
+    &__img {
+        @media (max-width: 991px) {
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<header class="header">
+    <div class="container header__inner">
+        <div class="logo header__logo">
+            <a href="#"><img class="logo__img header__logo-img" src="img/logo/logo.svg" alt="Логотип Profit Raders"></a>
+        </div>
+        @@include('./_header__menu.html')
+        <div class="header__lang">
+            <div class="header__lang-value"></div>
+            <div class="header__lang-drop">
+                <div class="header__lang-item header__lang-item--active" data-lang="ru">RU</div>
+                <div class="header__lang-item" data-lang="esp">ESP</div>
+                <div class="header__lang-item" data-lang="eng">EN</div>
+            </div>
+        </div>
+        <a href="#form" data-type="login" class="header__btn header__enter-btn fadeInRight wow" data-wow-duration="0.3s"
+            data-wow-delay="0.5s">Вход</a>
+        <a href="#form" data-type="register" class="header__btn header__register-btn btn--green fadeInRight wow"
+            data-wow-duration="0.3s" data-wow-delay="1s">Регистрация</a>
+        @@include('../burger/burger-btn/_burger-btn.html')
+    </div>
+
+    @@include('../burger/burger-menu/_burger-menu.html')
+</header>

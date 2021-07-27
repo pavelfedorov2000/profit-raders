@@ -1,0 +1,139 @@
+.about {
+    padding: 8.5rem 0 13rem;
+
+    @media (max-width: 991px) {
+        padding: 5.5rem 0 3.6rem;
+    }
+
+    @media (max-width: 500px) {
+        padding-bottom: 2rem;
+    }
+
+    // .about__inner
+
+    &__wrapper {
+        display: flex;
+
+        @media(max-width: 1200px) {
+            justify-content: space-between;
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        @media (max-width: 991px) {
+            line-height: 3.9rem;
+        }
+    }
+
+    // .about__content
+
+    &__content {
+        width: 93.5rem;
+        padding-right: 2rem;
+
+        @media (max-width: 991px) {
+            width: 50%;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    // .about__bold-text
+
+    &__bold-text {
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+        color: #141414;
+        margin: 5.4rem 0 3rem;
+
+        @media (max-width: 991px) {
+            font-size: 2.2rem;
+            line-height: 2.5rem;
+            margin: 1.6rem 0 2.3rem;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            margin: 2rem 0 1.5rem;
+        }
+    }
+
+    &__more {
+        @extend %text-18;
+        color: $orange;
+        font-weight: 600;
+        cursor: pointer;
+
+        @media(max-width: 500px) {
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+        }
+    }
+
+    &__more-text {
+        display: none;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #333;
+
+        @media (max-width: 500px) {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+
+        p+p {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__text-wrap {
+        p {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__btn {
+        margin-top: 3rem;
+
+        @media (max-width: 991px) {
+            margin-top: 3.5rem;
+        }
+
+        @media (max-width: 500px) {
+            margin: 2rem auto 0;
+        }
+    }
+
+    &__img {
+        width: 49.7rem;
+        height: 49.7rem;
+        margin-left: 16.2rem;
+
+        @media(max-width: 1200px) {
+            margin-left: 0;
+            max-width: 50%;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        img {
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-top: 2rem;
+            }
+        }
+    }
+}

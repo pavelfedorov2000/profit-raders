@@ -1,0 +1,54 @@
+.check-box {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    clip: rect(0 0 0 0);
+    padding-left: 3.6rem;
+}
+
+.check-style {
+    position: absolute;
+    width: 2.2rem;
+    height: 2.2rem;
+    background: $dark-green-gradient;
+    border-radius: 5px;
+    margin-left: -3.6rem;
+}
+
+.check-box:checked+.check-style {
+    border: 0.1rem solid #fff;
+
+    &:before {
+        content: '';
+        position: absolute;
+        @extend %pos-center-xy;
+        width: 1.6rem;
+        height: 1.5rem;
+        background-image: url(../img/icons/check.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* &__social {
+        width: 47px * 3 + 10px * 2;
+        grid-gap: 20px 10px;
+        order: 5;
+
+        @media (max-width: 575px) {
+            width: 47px * 6 + 10px * 5;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        @media (max-width: 374px) {
+            width: 47px * 3 + 10px * 2;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    } */
+
+//$border: 4px;
+//background-clip: padding-box;
+//border: solid $border transparent;
