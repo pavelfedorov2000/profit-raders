@@ -314,7 +314,7 @@ $(function () {
     });
 
     // Timer
-    let deadline = '2021-09-01'; // Задаем дедлайн
+    let deadline = '2021-12-01'; // Задаем дедлайн
 
     // Ф-ция оставшегося времени
     function getTimeRemaining(endtime) {
